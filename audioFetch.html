@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fake audio mark</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> -->
+  <!-- <script src="https://use.fontawesome.com/3c538cc85f.js"></script> -->
+</head>
+<body onload="onloadPage()">
+  <div class="container wrapper">
+    <!-- navbar -->
+    <div class="header">
+      <h1 class="fw-bolder text-center text-warning">MERCYSOUND</h1>
+      <hr class="my-0">
+      <ul class="nav justify-content-center fs-5 my-0">
+        <li class="nav-item">
+          <a class="nav-link active fw-bold" aria-current="page" href="#">Music</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active fw-bold" aria-current="page" href="#">Eduction</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active fw-bold" aria-current="page" href="#">Articles</a>
+        </li>
+        <li class="nav-item fw-bold">
+          <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li> -->
+        <li class="nav-item fw-bold">
+          <a href="#searchMusicInp" class="nav-link active"  >Search for Song</a>
+        </li>
+      </ul>
+      <hr class="my-0">
+    </div>
+    <!-- hero page -->
+    <div class="heroBody mt-5">
+      <div class="row">
+        <div class="col-sm-12 col-lg-8 col-xl-8">
+          <p class="display-5 fw-normal">Pop Songs</p>
+          <h5 id="aboutSong" class="fw-normal"><small></small>Below is a list of the <span class="text-primary">Latest Hippop Songs and Slow beat Songs mp3 download including 2019 / 2020. Latest Nigerian pop music, South African pop <span class="text-dark">and other</span> foreign pop songs.</span></h5>
+          <h4 id="songResult" class="rounded border-2"></h4>
+          <div class="container-fluid" id="bodyRow">
+          </div>
+          <div class="m-3 searchListNo text-primary d-flex gap-1  flex-wrap">
+            <button class="btn rounded btn-light text-primary btn-outline-info" onclick="firstPageSongs()">1</button><button class="btn rounded btn-light text-primary btn-outline-info" onclick="secondPageSongs()">7</button><button class="btn rounded btn-light text-primary btn-outline-info" onclick="thirdPageSongs()">15</button><button class="btn rounded btn-light text-primary btn-outline-info" onclick="forthPageSongs()">22</button>....<button class="btn rounded btn-light text-primary btn-outline-info">181</button><button class="btn rounded btn-light text-primary btn-outline-info" onclick="fifthPageSongs()">Next</button>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-4 col-xl-4">
+          <div class="p-2">
+            <div id="searchMusicInp" class="inp-btn d-flex">
+              <input type="text" placeholder="Search Mercysound" class="form-control me-2 rounded-0" id="inpSong">
+              <button class="btn btn-primary btn-md rounded-0 p-2" onclick="searchSong()">Search</button>
+            </div>
+            <div id="quickLink" class="quickLink">
+              <ul class="mt-3 fs-5 gap-3 d-grid row-gap-1">
+                <h3>Quick Link</h3>
+                <li class="">
+                  <a class="text-decoration-none" href="">Mercy Chinwo Songs</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="">Nathaniel Bassey Songs</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="">Frank Edwards Songs</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="">American Gospel Songs</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="">Moses Bliss Songs</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="">Sinach Songs</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="">Nigerian Gospel Songs</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="">Foreign Gospel Songs</a>
+                </li>
+                <li class="">
+                  <a class="text-decoration-none" href="">Mercy Chinwo Songs</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="">Nathaniel Bassey Songs</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="">Frank Edwards Songs</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="">American Gospel Songs</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="">Moses Bliss Songs</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="">Sinach Songs</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="">Nigerian Gospel Songs</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="">Foreign Gospel Songs</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="">Foreign Gospel Songs</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="">Foreign Gospel Songs</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="">Foreign Gospel Songs</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="">Foreign Gospel Songs</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="">Foreign Gospel Songs</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="">Foreign Gospel Songs</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="">Foreign Gospel Songs</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="">Foreign Gospel Songs</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none" href="">Foreign Gospel Songs</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  
+  <script>
+    var isLoading = true
+    const cardLoadFunc = () =>{
+      let content;
+      if(isLoading){
+        content = `
+        <div class="d-flex mb-2 column-gap-2">
+          <div class="col-4">
+          <div class="card" aria-hidden="true">
+            <img src="..." class="" alt="...">
+            <div class="card-body d-flex flex-column align-items-between p-1">
+              <h5 class="card-title placeholder-glow">
+                <span class="placeholder col-6"></span>
+              </h5>
+              <p class="card-text placeholder-glow">
+                <span class="placeholder col-7"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder col-8"></span>
+              </p>
+              <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" aria-hidden="true">
+            <img src="..." class="" alt="...">
+            <div class="card-body d-flex flex-column align-items-between p-1">
+              <h5 class="card-title placeholder-glow">
+                <span class="placeholder col-6"></span>
+              </h5>
+              <p class="card-text placeholder-glow">
+                <span class="placeholder col-7"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder col-8"></span>
+              </p>
+              <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" aria-hidden="true">
+            <img src="..." class="" alt="...">
+            <div class="card-body d-flex flex-column align-items-between p-1">
+              <h5 class="card-title placeholder-glow">
+                <span class="placeholder col-6"></span>
+              </h5>
+              <p class="card-text placeholder-glow">
+                <span class="placeholder col-7"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder col-8"></span>
+              </p>
+              <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="d-flex column-gap-2 mb-2">
+          <div class="col-4">
+          <div class="card" aria-hidden="true">
+            <img src="..." class="" alt="...">
+            <div class="card-body d-flex flex-column align-items-between p-1">
+              <h5 class="card-title placeholder-glow">
+                <span class="placeholder col-6"></span>
+              </h5>
+              <p class="card-text placeholder-glow">
+                <span class="placeholder col-7"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder col-8"></span>
+              </p>
+              <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" aria-hidden="true">
+            <img src="..." class="" alt="...">
+            <div class="card-body d-flex flex-column align-items-between p-1">
+              <h5 class="card-title placeholder-glow">
+                <span class="placeholder col-6"></span>
+              </h5>
+              <p class="card-text placeholder-glow">
+                <span class="placeholder col-7"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder col-8"></span>
+              </p>
+              <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" aria-hidden="true">
+            <img src="..." class="" alt="...">
+            <div class="card-body d-flex flex-column align-items-between p-1">
+              <h5 class="card-title placeholder-glow">
+                <span class="placeholder col-6"></span>
+              </h5>
+              <p class="card-text placeholder-glow">
+                <span class="placeholder col-7"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder col-8"></span>
+              </p>
+              <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="d-flex column-gap-2 mb-2">
+          <div class="col-4">
+          <div class="card" aria-hidden="true">
+            <img src="..." class="" alt="...">
+            <div class="card-body d-flex flex-column align-items-between p-1">
+              <h5 class="card-title placeholder-glow">
+                <span class="placeholder col-6"></span>
+              </h5>
+              <p class="card-text placeholder-glow">
+                <span class="placeholder col-7"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder col-8"></span>
+              </p>
+              <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" aria-hidden="true">
+            <img src="..." class="" alt="...">
+            <div class="card-body d-flex flex-column align-items-between p-1">
+              <h5 class="card-title placeholder-glow">
+                <span class="placeholder col-6"></span>
+              </h5>
+              <p class="card-text placeholder-glow">
+                <span class="placeholder col-7"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder col-8"></span>
+              </p>
+              <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" aria-hidden="true">
+            <img src="..." class="" alt="...">
+            <div class="card-body d-flex flex-column align-items-between p-1">
+              <h5 class="card-title placeholder-glow">
+                <span class="placeholder col-6"></span>
+              </h5>
+              <p class="card-text placeholder-glow">
+                <span class="placeholder col-7"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder col-8"></span>
+              </p>
+              <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+            </div>
+          </div>
+        </div>
+        </div>
+        `
+        bodyRow.innerHTML = content
+      }
+    }
+    const onloadPage = () =>{
+      // window.scrollTo(0, 0);
+      // cardLoadFunc()
+      // fetch('https://api.github.com/users')
+      fetch("https://robo-music-api.onrender.com/music/my-api")
+      .then(response => response.json())
+      .then(convertedRes => {
+        isLoading = false
+        console.log(convertedRes);
+        let firstLoadSongs = convertedRes.length - 24;
+        let content = "<div class='row'>"
+          for(let eachItem = 0; eachItem < firstLoadSongs; eachItem++){
+            content += `<div class='col-md-6 col-sm-12 col-lg-4 col-xl-4 p-1' style="max-height:65vh;">
+              <div class="card" style="height:100%;;">
+                <img src="${convertedRes[eachItem].songImage}" style="width:100%; height:45%;" class=" p-0 m-0" /><br>
+                <div class="card-body d-flex flex-column align-items-between p-1">
+                  <div class="mb-auto col-sm-ps-2">
+                    <h6><span>Song Titles: </span>${convertedRes[eachItem].songTitle}</h6>
+                    <h6><span>Artist Name: </span>${convertedRes[eachItem].artistName}</h6>
+                    <p class="mb-0"<span>Date Release: </span>${convertedRes[eachItem].releaseDate}</p>
+                  </div>
+                  <div class="">
+                    <audio src="${convertedRes[eachItem].songUrl}" controls class="w-100" />
+                  </div>
+                </div>
+              </div>
+              </div>`
+          }
+          content += "</div>"
+          bodyRow.innerHTML = content
+          // convertedRes.map(eachItem => {
+          //   content += `<div class=' col-md-6 col-sm-12 col-lg-4 col-xl-4 p-1' style="max-height:65vh;">
+          //     <div class="card" style="height:100%;;">
+          //       <img src="${eachItem.songImage}" style="width:100%; height:45%;" class=" p-0 m-0" /><br>
+          //       <div class="card-body d-flex flex-column align-items-between p-1">
+          //         <h6>${eachItem.songTitle}</h6>
+          //         <h6>${eachItem.artistName}</h6>
+          //         <p class="mb-0">${eachItem.releaseDate}</p>
+          //         <audio src="${eachItem.songUrl}" controls class="w-100" />
+          //       </div>
+          //     </div>
+          //     </div>`
+          // }
+          // )
+          // content += "</div>"
+          // bodyRow.innerHTML = content
+      } 
+      )
+
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const pageJumpTo = () =>{
+        const windowHeight = window.innerHeight;
+          const cententHeight = windowHeight / 0
+          window.scrollTo({
+            top: cententHeight,
+            behavior: "smooth"
+          });
+      }
+      
+    })
+    // 1st page of next
+    const firstPageSongs = () =>{
+      onloadPage()
+      // pageJumpTo()
+      window.scrollTo(0, 0);
+      // setTimeout(pageJumpTo(), 5000)
+    }
+    // next 2nd page of song
+    const secondPageSongs = () =>{
+      cardLoadFunc()
+      window.scrollTo(0, 0);
+      // pageJumpTo()
+            fetch("https://robo-music-api.onrender.com/music/my-api")
+      .then(response => response.json())
+      .then(convertedRes => {
+        isLoading = false
+        console.log(convertedRes);
+        let firstLoadSongs = convertedRes.length - 18;
+        let content = "<div class='row'>"
+          for(let eachItem = 6; eachItem < firstLoadSongs; eachItem++){
+            content += `<div class=' col-md-6 col-sm-12 col-lg-4 col-xl-4 p-1' style="max-height:65vh;">
+              <div class="card" style="height:100%;;">
+                <img src="${convertedRes[eachItem].songImage}" style="width:100%; height:45%;" class=" p-0 m-0" /><br>
+                <div class="card-body d-flex flex-column align-items-between p-1">
+                  <div class="mb-auto">
+                    <h6><span>Song Titles: </span>${convertedRes[eachItem].songTitle}</h6>
+                    <h6><span>Artist Name: </span>${convertedRes[eachItem].artistName}</h6>
+                    <p class="mb-0"<span>Date Release: </span>${convertedRes[eachItem].releaseDate}</p>
+                  </div>
+                  <div>
+                    <audio src="${convertedRes[eachItem].songUrl}" controls class="w-100" />
+                  </div>
+                </div>
+              </div>
+              </div>`
+          }
+          content += "</div>"
+          bodyRow.innerHTML = content
+          })
+      } 
+    // next 3rd page of song
+    const thirdPageSongs = () =>{
+      cardLoadFunc()
+      window.scrollTo(0, 0);
+      // pageJumpTo()
+            fetch("https://robo-music-api.onrender.com/music/my-api")
+      .then(response => response.json())
+      .then(convertedRes => {
+        isLoading = false
+        console.log(convertedRes);
+        let firstLoadSongs = convertedRes.length - 12;
+        let content = "<div class='row'>"
+          for(let eachItem = 12; eachItem < firstLoadSongs; eachItem++){
+            content += `<div class=' col-md-6 col-sm-12 col-lg-4 col-xl-4 p-1' style="max-height:65vh;">
+              <div class="card" style="height:100%;;">
+                <img src="${convertedRes[eachItem].songImage}" style="width:100%; height:45%;" class=" p-0 m-0" /><br>
+                <div class="card-body d-flex flex-column align-items-between p-1">
+                  <div class="mb-auto">
+                    <h6><span>Song Titles: </span>${convertedRes[eachItem].songTitle}</h6>
+                    <h6><span>Artist Name: </span>${convertedRes[eachItem].artistName}</h6>
+                    <p class="mb-0"<span>Date Release: </span>${convertedRes[eachItem].releaseDate}</p>
+                  </div>
+                  <div>
+                    <audio src="${convertedRes[eachItem].songUrl}" controls class="w-100" />
+                  </div>
+                </div>
+              </div>
+              </div>`
+          }
+          content += "</div>"
+          bodyRow.innerHTML = content
+          })
+      } 
+    // next 4th page of song
+    const forthPageSongs = () =>{
+      cardLoadFunc()
+      window.scrollTo(0, 0);
+      // pageJumpTo()
+            fetch("https://robo-music-api.onrender.com/music/my-api")
+      .then(response => response.json())
+      .then(convertedRes => {
+        isLoading = false
+        console.log(convertedRes);
+        let firstLoadSongs = convertedRes.length - 6;
+        let content = "<div class='row'>"
+          for(let eachItem = 18; eachItem < firstLoadSongs; eachItem++){
+            content += `<div class=' col-md-6 col-sm-12 col-lg-4 col-xl-4 p-1' style="max-height:65vh;">
+              <div class="card" style="height:100%;;">
+                <img src="${convertedRes[eachItem].songImage}" style="width:100%; height:45%;" class=" p-0 m-0" /><br>
+                <div class="card-body d-flex flex-column align-items-between p-1 d-flex flex-column align-items-between">
+                  <div class="mb-auto">
+                    <h6><span>Song Titles: </span>${convertedRes[eachItem].songTitle}</h6>
+                    <h6><span>Artist Name: </span>${convertedRes[eachItem].artistName}</h6>
+                    <p class="mb-0"<span>Date Release: </span>${convertedRes[eachItem].releaseDate}</p>
+                  </div>
+                  <div>
+                    <audio src="${convertedRes[eachItem].songUrl}" controls class="w-100" />
+                  </div>
+                </div>
+              </div>
+              </div>`
+          }
+          content += "</div>"
+          bodyRow.innerHTML = content
+          })
+      } 
+      // next 5th page of song
+    const fifthPageSongs = () =>{
+      cardLoadFunc()
+      // pageJumpTo()
+      window.scrollTo(0, 0);
+            fetch("https://robo-music-api.onrender.com/music/my-api")
+      .then(response => response.json())
+      .then(convertedRes => {
+        isLoading = false
+        console.log(convertedRes);
+        let firstLoadSongs = convertedRes.length;
+        let content = "<div class='row'>"
+          for(let eachItem = 23; eachItem < firstLoadSongs; eachItem++){
+            content += `<div class=' col-md-6 col-sm-12 col-lg-4 col-xl-4 p-1' style="max-height:65vh;">
+              <div class="card" style="height:100%;;">
+                <img src="${convertedRes[eachItem].songImage}" style="width:100%; height:45%;" class=" p-0 m-0" /><br>
+                <div class="card-body d-flex flex-column align-items-between p-1 d-flex flex-column align-items-between">
+                  <div class="mb-auto">
+                    <h6><span>Song Titles: </span>${convertedRes[eachItem].songTitle}</h6>
+                    <h6><span>Artist Name: </span>${convertedRes[eachItem].artistName}</h6>
+                    <p class="mb-0"<span>Date Release: </span>${convertedRes[eachItem].releaseDate}</p>
+                    </div>
+                    <div>
+                      <audio src="${convertedRes[eachItem].songUrl}" controls class="w-100" />
+                      </div>
+                      </div>
+                      </div>
+                      </div>`
+                    }
+                    content += "</div>"
+                    bodyRow.innerHTML = content
+                  })
+                } 
+                
+                // search func
+                let allSongs;
+                const searchSong = () =>{
+                  // quickLink.style.display = "none"
+                  // pageJumpTo()
+                  aboutSong.style.display = "none"
+                  var songValueName = inpSong.value
+                  cardLoadFunc()
+                  fetch("https://robo-music-api.onrender.com/music/my-api")
+                  .then(response => response.json())
+                  .then(convertedRes => {
+                    let toUse = convertedRes
+                    let songFound;
+                    songFound = toUse.filter((a) =>{
+                      return a.songTitle.toLowerCase().includes(songValueName.toLowerCase())
+                    } 
+                    )
+                    window.scrollTo({
+                      top:0,
+                      behavior: "smooth"
+                    });
+                    // let searchAmt = Number(toUse.length)
+                    let searchAmt = songFound.length
+                    console.log(searchAmt)
+                    // console.log(typeof(searchAmt))
+                    if(searchAmt == 1){
+                      songResult.innerHTML = `Search song related result: <span class="fs-5 fw-normal">${songValueName}</span>`
+                    }else if(searchAmt > 1){
+                      songResult.innerHTML = `Search songs related results: <span class="fs-5 fw-normal">${songValueName}</span>`
+                    }else if(searchAmt == 0){
+                      songResult.innerHTML = `There is no result found for this search: <span class="fs-5 fw-normal">${songValueName}</span>`
+                    }
+                    let content = "<div class='row'>"
+                      for(let eachItem = 0; eachItem < songFound.length; eachItem++){
+                        content += `<div class='col-md-6 col-sm-12 col-lg-4 col-xl-4 p-1' style="max-height:65vh;">
+                          <div class="card" style="height:100%;;">
+                            <img src="${songFound[eachItem].songImage}" style="width:100%; height:45%;" class=" p -0 m-0" /><br>
+                            <div class="card-body d-flex flex-column align-items-between p-1">
+                <div class="mb-auto col-sm-ps-2">
+                  <h6><span>Song Titles: </span>${songFound[eachItem].songTitle}</h6>
+                  <h6><span>Artist Name: </span>${songFound[eachItem].artistName}</h6>
+                  <p class="mb-0"<span>Date Release: </span>${songFound[eachItem].releaseDate}</p>
+                  </div>
+                  <div class="">
+                    <audio src="${songFound[eachItem].songUrl}" controls class="w-100" />
+                    </div>
+                    </div>
+                    </div>
+                    </div>`
+                  }
+                  content += "</div>"
+                  bodyRow.innerHTML = content
+                } 
+                )
+              }
+              </script>
+</body>
+</html>

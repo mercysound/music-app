@@ -1,0 +1,21 @@
+.quickLink ul li {
+  text-decoration: none;
+  text-decoration-style: none;
+  list-style-type: none;
+}
+
+.header ul a {
+  text-decoration: none;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
